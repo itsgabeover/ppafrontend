@@ -50,7 +50,7 @@ const GetStarted = () => {
 
     try {
       const res = await axios.post(
-        `${apiUrl}/pdf/upload/`,
+        `${apiUrl}pdf/upload/`,
         formData,
         {
           headers: {

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-import logo from '../../assets/logo.png'
 import { useNavigate, Link, useLocation } from "react-router-dom";
 //BEM Block element modifier __
 

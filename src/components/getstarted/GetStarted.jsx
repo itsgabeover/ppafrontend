@@ -14,10 +14,8 @@ const GetStarted = () => {
   const [summary, setSummary] = useState("");
   const [response, setResponse] = useState(null);
 
-  const [data, setData] = useState(null);
   const [upload, setUpload] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
   const location = useLocation();
 
   const clientId = "b0216105-f29e-43aa-a7c0-473aec45cd52";

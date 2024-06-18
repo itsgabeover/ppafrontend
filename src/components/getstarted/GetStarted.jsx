@@ -20,6 +20,7 @@ const GetStarted = () => {
 
   const clientId = "b0216105-f29e-43aa-a7c0-473aec45cd52";
   const client = useClient({ clientId });
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   client.on("customEvent", (event) => {
     if (event.action === "FileUpload") {
@@ -49,7 +50,7 @@ const GetStarted = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/pdf/upload/",
+        `${apiUrl}/pdf/upload/`,
         formData,
         {
           headers: {

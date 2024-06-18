@@ -1,0 +1,39 @@
+h1 {
+    margin-right: 0rem;
+}
+
+
+
+.botpress-container {
+    display: flex;
+    margin: auto;
+}
+
+.column {
+    flex: 1;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-align: center; /* To center the text within the custom button */
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.summary {
+    padding: .5rem;
+    border: 2px solid #2b31a6;
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+    
+}
+pre {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}

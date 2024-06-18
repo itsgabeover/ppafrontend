@@ -1,0 +1,6 @@
+.bpw-chat-container {
+  background-color: #ffffff;
+  scrollbar-width: thin !important;
+  scrollbar-color: #f5f5f5 #ffffff !important;
+  border: 10px solid #2b31a6;
+}

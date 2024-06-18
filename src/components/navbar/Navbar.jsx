@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-import { useNavigate, Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 //BEM Block element modifier __
 
 
@@ -54,7 +54,6 @@ const Menu = () => {
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
-  const navigate = useNavigate();
   return (
     <div className="navbar">
       <div className="navbar-links">

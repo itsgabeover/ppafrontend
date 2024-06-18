@@ -71,7 +71,6 @@ const GetStarted = () => {
       	
     } catch (err) {
       console.error("Error uploading file:", err);
-      setError("Error uploading file");
     }
 
 

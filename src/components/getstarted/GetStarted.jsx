@@ -21,6 +21,7 @@ const GetStarted = () => {
   const clientId = "b0216105-f29e-43aa-a7c0-473aec45cd52";
   const client = useClient({ clientId });
   const apiUrl = process.env.REACT_APP_API_URL;
+  console.log("API URL:", apiUrl);
 
   client.on("customEvent", (event) => {
     if (event.action === "FileUpload") {
@@ -49,15 +50,11 @@ const GetStarted = () => {
     setIsLoading(true);
 
     try {
-      const res = await axios.post(
-        `${apiUrl}pdf/upload/`,
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
+      const res = await axios.post(`${apiUrl}pdf/upload`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
       console.log("Response received:", res.data);
       //turn of loading indicator
       setIsLoading(false);

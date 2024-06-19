@@ -83,8 +83,7 @@ const GetStarted = () => {
       <div className="botpress-container">
         <div className="column">
           <Botpress setUpload={setUpload} client={client} />
-        </div>
-        <div className="column">
+
           <Popup trigger={upload} setTrigger={setUpload}>
             <h2>Upload Your Illustration</h2>
             <input
@@ -92,15 +91,17 @@ const GetStarted = () => {
               type="file"
               onChange={handleFileChange}
             />
-            {isLoading && (
-              <OrbitProgress
-                variant="bubble-dotted"
-                color="#4965ea"
-                size="medium"
-                text=""
-                textColor=""
-              />
-            )}
+            <div>
+              {isLoading && (
+                <OrbitProgress
+                  variant="bubble-dotted"
+                  color="#4965ea"
+                  size="medium"
+                  text=""
+                  textColor=""
+                />
+              )}
+            </div>
             <button className="upload-btn" type="submit" onClick={handleUpload}>
               Upload
             </button>
